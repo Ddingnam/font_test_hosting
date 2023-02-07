@@ -24,12 +24,23 @@
 </body>
 <script>
     function print()  {
-        const name = document.getElementById('getname').value;
-        document.getElementById("showname").innerText = name;
-        const num = document.getElementById('getnum').value;
-        document.getElementById("shownum").innerText = num;
-        document.getElementById("showname").style.fontSize = "125px";
-        document.getElementById("shownum").style.fontSize = "400px";
+        var a = window.matchMedia('(max-width: 576px)');
+
+        if (a.matches) {
+            const name = document.getElementById('getname').value;
+            document.getElementById("showname").innerText = name;
+            const num = document.getElementById('getnum').value;
+            document.getElementById("shownum").innerText = num;
+            document.getElementById("showname").style.fontSize = "50px";
+            document.getElementById("shownum").style.fontSize = "200px";
+        } else {
+            const name = document.getElementById('getname').value;
+            document.getElementById("showname").innerText = name;
+            const num = document.getElementById('getnum').value;
+            document.getElementById("shownum").innerText = num;
+            document.getElementById("showname").style.fontSize = "125px";
+            document.getElementById("shownum").style.fontSize = "400px";
+        }
     }
 </script>
 </html>
