@@ -1,0 +1,106 @@
+/* FONT = Noto Sans KR */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap');
+
+@font-face {
+    font-family: 'College';
+    font-style: normal;
+    font-weight: 400;
+    src : url('./font/CollegiateheavyoutlineMedium-B0yx.woff') format("woff")
+}
+
+/* GLOBAL */
+body *{ font-family: Noto Sans KR; font-weight: 400; color: #000000; letter-spacing: -0.5px; box-sizing: border-box; }
+ul{ list-style: none; padding: 0; margin: 0; }
+img{ max-width: 100%; border-radius: 50px; overflow: hidden; border: 2px solid #003d81; }
+
+
+/* text style */
+.name{
+    font-family: 'College';
+    font-size: 125px;
+    font-weight: 400;
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+.number{ 
+    font-family: 'College';
+    font-size: 400px;
+    font-weight: 400;
+    margin-bottom: 1000px;
+}
+.tit02{ 
+    font-size: 39px;
+    font-weight: 700;
+}
+.txt{ 
+    font-size: 31px;
+    word-break: keep-all;
+}
+
+/* 컨텐츠 가이드 */
+#wrap{ width: 60%; margin: 0 auto; }
+
+/* 인포 박스 */
+.info_box{ 
+    width: 100%;
+    height: 650px;
+    background-color: #fdfdfd;
+    border: 1px solid #ebebeb;
+    border-bottom-color: #e2e2e2;
+    border-radius: .25em;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px; }
+
+.info_box .tit01{ margin-bottom: 40px; }
+.info_img{ float: left; width: 25%; }
+.info_img img{ width: 100%; }
+.info_desc{ float: left; width: 75%; padding-left: 5%; }
+.info_desc ul li{ margin-bottom: 20px; }
+.info_desc ul li:last-of-type{ margin-bottom: 0; }
+
+/* 텍스트 박스 */
+.txt_box{ font-family: Noto Sans KR; margin-bottom: 65px; }
+.txt_box .input_box { width:400px; margin: 0 auto}
+.txt_box .input_box input {
+    width: 100%;
+    height: 35px;
+    color: #999;
+    font-size: inherit;
+    line-height: normal;
+    vertical-align: middle;
+    background-color: #fdfdfd;
+    border: 1px solid #ebebeb;
+    border-bottom-color: #e2e2e2;
+    border-radius: .25em;
+    margin: 5px auto;
+}
+.txt_box .input_box button {
+    font-family: Noto Sans KR;
+    box-shadow:inset 0px 1px 0px 0px #ffffff;
+    background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+    background-color:#ffffff;
+    border-radius:6px;
+    border:1px solid #dcdcdc;
+    display:inline-block;
+    cursor:pointer;
+    color:#666666;
+    font-size:15px;
+    font-weight:bold;
+    padding:6px 24px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #ffffff;
+    margin: 5px 39%;
+}
+.txt_box .input_box button:hover {
+    background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+    background-color:#f6f6f6;
+}
+.txt_box:last-of-type{ margin-bottom: 0; }
+.txt_box .tit02{ margin-bottom: 20px; }
+.txt_box .txt{ margin-bottom: 30px; }
+
+/* 이미지 박스 */
+.img_box{ width: 100%; text-align: center; margin-top: 100px; }
+.img_box .tit01{ margin-bottom: 40px; }
+.img_box .img_wrap{ margin-bottom: 90px; }

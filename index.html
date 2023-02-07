@@ -1,6 +1,35 @@
-<!doctype html>
-<html>
-    <body>
-        <h1>Hello World!</h1>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font_Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrap">
+        <div class="info_box">
+            <div id="showname" class="name">HAECHAN</div>
+            <div id="shownum" class="number">58</div>
+        </div>
+
+        <div class="txt_box">
+            <div class="input_box">
+                <input id="getname" value="HAECHAN" placeholder="이름을 입력하세요"> </input>
+                <input id="getnum" value="58" placeholder="번호를 입력하세요"> </input>
+                <button onclick="print()">변경</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function print()  {
+        const name = document.getElementById('getname').value;
+        document.getElementById("showname").innerText = name;
+        const num = document.getElementById('getnum').value;
+        document.getElementById("shownum").innerText = num;
+        document.getElementById("showname").style.fontSize = "125px";
+        document.getElementById("shownum").style.fontSize = "400px";
+    }
+</script>
 </html>
